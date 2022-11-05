@@ -1,0 +1,53 @@
+#include <conio.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+float np,desc,t,imp,cover;
+char sexo;
+int main()
+{
+	printf("teclee el sexo del grupo");
+	scanf("%c",&sexo);
+	printf("teclee el numero de persona del grupo");
+	scanf("%f",&np);
+	
+	if(sexo=='m')
+	{
+		cover=200;
+	}
+	else
+	if (sexo=='f')
+	{
+		cover=50;
+	}
+	else
+	{	
+	printf("error");
+	cover=-1;
+    }
+    
+    imp=np*cover;
+    if(np>5)
+    {
+    	desc=imp*0.10;
+	}
+	else
+	{
+	 desc=0;
+	 printf("              no hay descuento \n            ");
+	}
+	
+
+		
+    
+	t=imp-desc;
+	
+	        printf("importe:%f \n",imp);
+	        printf("descuento:%f \n", desc);
+	        printf("total:%f \n",t);
+	        
+	
+getch();
+return 0;	
+}
