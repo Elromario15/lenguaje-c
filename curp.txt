@@ -1,0 +1,68 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	char N[30],AP[30],AM[30],A[4],S[6],E[2];
+	int M, D;
+	char f=1, z;
+	printf("ingresa tu nombre\n");
+	scanf("%s",N);	
+	printf("ingresa tu apellido paterno\n");
+	scanf("%s",AP);
+	printf("ingresa tu apellido materno\n");
+	scanf("%s",AM);
+	printf("en que a%co naciste\n",164);
+    scanf("%s",A);
+    printf("en que mes naciste\n");
+    scanf("%d",&M);
+    printf("que d%ca naciste\n",161);
+    scanf("%d",&D);
+    printf("eres hombre o mujer\n");
+    scanf("%s",S);
+    system("cls");
+    printf("ingresa la clave de tu entidad federativa\n");
+    printf("AGUASCALIENTES-AS\n");
+    printf("BAJA CALIFORNIA-BC\n");
+    printf("BAJA CALIFORNIA SUR-BS\n");
+    printf("CAMPECHE-CC\n");
+    printf("COAHUILA-CL\n");
+    printf("COLIMA-CM\n");
+    printf("CHIAPAS-CS\n");
+    printf("CHIHUAHUA-CH\n");
+    printf("DISTRITO FEDERAL-DF\n");
+    printf("DURANGO-DG\n");
+    printf("GUANAJUATO-GT\n");
+    printf("GUERRERO-GR\n");
+    printf("HIDALGO-HG\n");
+    printf("JALISCO-JC\n");
+    printf("MEXICO-MC\n");
+    printf("MICHOACAN-MN\n");
+    printf("MORELOS-MS\n");
+    printf("NAYARIT-NT\n");
+    printf("NUEVO LEON-NL\n");
+    printf("OAXACA-OC\n");
+    printf("PUEBLA-PL\n");
+    printf("QUERETARO-QT\n");
+    printf("QUINTANA ROO-QR\n");
+    printf("SAN LUIS POTOSI-SP\n");
+    printf("SINALOA-SL\n");
+    printf("SONORA-SR\n");
+    printf("TABASCO-TC\n");
+    printf("TAMAULIPAS-TS\n");
+    printf("TLAXCALA-TC\n");
+    printf("VERACRUZ-VZ\n");
+    printf("YUCATAN-YN\n");
+    printf("ZACATECAS-ZS\n");
+    printf("NACIDO EN EL EXTRANJERO-NE\n");
+    scanf("%s",E);
+	while((AP[f]!='a')&&(AP[f]!='e')&&(AP[f]!='i')&&(AP[f]!='o')&&(AP[f]!='u'))
+	{ 
+	f++;
+	}
+	system("cls");
+	printf("%c%c%c%c%c%c%d%d%c%c%c",AP[0],AP[f],AM[0],N[0],A[2],A[3],M,D,S[0],E[0],E[1]);
+getch();
+return 0;
+
+}
